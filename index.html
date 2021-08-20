@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="images/favicon.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description"
+        content="Led by Space Boy Fusk - CyBlocs have taken over the world and now go head to head to test their might in the CyBall Football Association." />
+
+    <meta property="og:url" content="https://cyball.org">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CyBall">
+    <meta property="og:description"
+        content="Led by Space Boy Fusk - CyBlocs have taken over the world and now go head to head to test their might in the CyBall Football Association.">
+    <meta property="og:image" content="https://cyball.org/favicon.png">
+    <meta property="og:image:height" content="512">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:type" content="image/png">
+    <meta name="twitter:description"
+        content="Led by Space Boy Fusk - CyBlocs have taken over the world and now go head to head to test their might in the CyBall Football Association." />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="CyBall" />
+
+    <title>CyBall</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(./images/BG.png);
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+        }
+        body::before {
+            position: absolute;
+            content: ' ';
+            background: rgb(0, 0, 0, 0.85);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        @keyframes halo {
+            0% { opacity: 0; }
+            40% { opacity: 1; }
+            60% { opacity: 1; }
+            100% {opacity: 0;}
+        }
+        .content {
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            width: 100%;
+        }
+        .content-ani {
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            width: 100%;
+            animation: halo 1.5s;
+            animation-iteration-count: infinite;
+        }
+        .logo {
+            width: 500px;
+            max-width: 80%;
+        }
+        .comming {
+            width: 450px;
+            max-width: 80%;
+        }
+        .footer {
+            position: absolute;
+            width: 500px;
+            max-width: 100%;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+        .frame {
+            width: 500px;
+            max-width: 100%;
+        }
+
+        .social-container {
+            position: absolute;
+            top: 50%;
+            width: 62%;
+            display: flex;
+            justify-content: space-between;
+            left: 50%;
+            transform: translate(-50%, -30%);
+        }
+
+        .social-item {
+            width: 15%;
+            display: block;
+            transition: all 0.3s;
+        }
+
+        .social-item img {
+            width: 100%;
+        }
+
+        .social-item:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <img src="./images/logo.png" alt="CyBall Logo" class="logo">
+        <br/>
+        <img src="./images/coming-soon.png" alt="CyBall Logo" class="comming">
+    </div>
+    <div class="content-ani">
+        <img src="./images/logo.png" alt="CyBall Logo" class="logo">
+        <br/>
+        <img src="./images/coming-soon.png" alt="CyBall Logo" class="comming">
+    </div>
+    <div class="footer">
+        <img src="./images/frame-icon.png" class="frame">
+        <div class="social-container">
+            <a target="_black" href="https://t.me/cyballofficial" class="social-item">
+                <img src="./images/telegram.png" alt="Cyball discord">
+            </a>
+            <a target="_black" href="https://twitter.com/CyBallOfficial" class="social-item">
+                <img src="./images/tweeter.png" alt="Cyball twitter">
+            </a>
+            <a target="_black" href="http://cyballofficial.medium.com" class="social-item">
+                <img src="./images/medium.png" alt="Cyball medium">
+            </a>
+            <a target="_black" href="https://discord.com/channels/869090177505718272/869110135610544139" class="social-item">
+                <img src="./images/discord.png" alt="Cyball discord">
+            </a>
+            <a target="_black" href="#" class="social-item">
+                <img src="./images/fb.png" alt="Cyball facebook">
+            </a>
+            <a target="_black" href="https://www.instagram.com/CyBall_Official/" class="social-item">
+                <img src="./images/instagram.png" alt="Cyball instagram">
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
