@@ -32,16 +32,24 @@
         body {
             margin: 0;
             padding: 0;
-            background-image: url(./images/BG.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: top;
             height: 100vh;
             position: relative;
             font-family: 'agencyfb', Arial, Helvetica, sans-serif;
             background-attachment: fixed;
         }
-        body::before {
+        .background {
+            position: fixed;
+            content: ' ';
+            background-image: url(./images/BG.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .background::before {
             position: fixed;
             content: ' ';
             background: rgb(0, 0, 0, 0.85);
@@ -224,6 +232,8 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSZCBBC"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <div class="background">
+    </div>
     <div class="container">
         <div class="content">
             <img src="./images/logo.png" alt="CyBall Logo" class="logo">
