@@ -9,12 +9,12 @@
     <meta name="description"
         content="Led by Space Boy Fusk - CyBlocs have taken over the world and now go head to head to test their might in the CyBall Football Association." />
 
-    <meta property="og:url" content="https://cyball.org">
+    <meta property="og:url" content="https://cyball.com">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="CyBall">
+    <meta property="og:title" content="CyBall - CyBloc Football NFT Play-to-Earn Blockchain Game">
     <meta property="og:description"
         content="Led by Space Boy Fusk - CyBlocs have taken over the world and now go head to head to test their might in the CyBall Football Association.">
-    <meta property="og:image" content="https://cyball.org/logo.png">
+    <meta property="og:image" content="https://cyball.com/logo.png">
     <meta property="og:image:height" content="512">
     <meta property="og:image:width" content="512">
     <meta property="og:image:type" content="image/png">
@@ -23,8 +23,12 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="CyBall" />
 
-    <title>CyBall</title>
+    <title>CyBall - CyBloc Football NFT Play-to-Earn Blockchain Game</title>
     <style>
+        @font-face {
+            font-family: agencyfb;
+            src: url(agencyfb-regular.otf);
+        }
         body {
             margin: 0;
             padding: 0;
@@ -34,9 +38,11 @@
             background-position: top;
             height: 100vh;
             position: relative;
+            font-family: 'agencyfb', Arial, Helvetica, sans-serif;
+            background-attachment: fixed;
         }
         body::before {
-            position: absolute;
+            position: fixed;
             content: ' ';
             background: rgb(0, 0, 0, 0.85);
             top: 0;
@@ -50,34 +56,121 @@
             60% { opacity: 1; }
             100% {opacity: 0;}
         }
-        .content {
-            position: absolute;
-            top: 15%;
+        .container {
+            position: relative;
+            top: 10%;
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
             width: 100%;
+            height: 200px;
+            transition: all 0.3s;
+        }
+        .content {
+            position: absolute;
+            width: 100%;
         }
         .content-ani {
             position: absolute;
-            top: 15%;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
             width: 100%;
             animation: halo 1.5s;
             animation-iteration-count: infinite;
         }
         .logo {
-            width: 500px;
-            max-width: 80%;
+            width: 400px;
+            max-width: 70%;
         }
-        .comming {
-            width: 350px;
-            max-width: 80%;
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                height: 120px;
+            }
+        }
+
+        .des {
+            font-family: agencyfb;
+            color: white;
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 60px;
+            margin-top: 10px;
+            transition: all 0.3s;
+            text-transform: uppercase;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .des {
+                font-size: 30px;
+                /* margin-top: -20px; */
+            }
+        }
+        .register {
+            position: relative;
+            top: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            width: 100%;
+            padding-bottom: 100px;
+        }
+        .register-des {
+            color: #ffffff;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .register form {
+            display: inline-flex;
+            align-items: center;
+            max-width: 90%;
+            width: 430px;
+        }
+        #sg-submit-btn {
+            font-family: agencyfb;
+            font-size: 20px;
+            border: 1px solid #ebdefc;
+            padding: 10px 15px 6px 15px;
+            width: 120px;
+            background: rgb(63,195,255);
+            background: linear-gradient(0deg, rgba(63,195,255,1) 0%, rgba(93,99,215,1) 36%, rgba(173,167,201,1) 100%);
+            color: #ffffff;
+            outline: none;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            margin-left: 5px;
+            position: relative;
+            box-shadow: 0 0 18px rgb(0 125 254 / 50%);
+            /* background-image: url(./images/-2x.png); */
+        }
+        #sg-submit-btn::before {
+            position: absolute;
+            content: ' ';
+            top: 2px;
+            left: 4px;
+            right: 4px;
+            height: 19px;
+            background: rgba(255, 255, 255, 0.15);
+        }
+        #sg-submit-btn:hover {
+            box-shadow: 0 0 18px rgb(0 125 254 / 70%);
+            cursor: pointer;
+        }
+        input {
+            font-family: agencyfb;
+            font-size: 20px;
+            border: 1px solid #63b8e859;
+            padding: 8px 15px;
+            width: 100%;
+            background: #00000096;
+            color: #ffffff;
+            outline: none;
+        }
+        #sg-response {
+            font-size: 20px;
+            color: #61cc65;
+            margin-top: 5px;
         }
         .footer {
-            position: absolute;
+            position: fixed;
             width: 500px;
             max-width: 100%;
             bottom: 0;
@@ -115,18 +208,46 @@
             transform: translateY(-10px);
         }
     </style>
+
+    <script type="text/javascript" src="//sgwidget.leaderapps.co/js/sendgrid-widget.js"></script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NSZCBBC');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
-    <div class="content">
-        <img src="./images/logo.png" alt="CyBall Logo" class="logo">
-        <br/>
-        <img src="./images/coming-soon2.png" alt="CyBall Logo" class="comming">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSZCBBC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="container">
+        <div class="content">
+            <img src="./images/logo.png" alt="CyBall Logo" class="logo">
+        </div>
+        <div class="content-ani">
+            <img src="./images/logo.png" alt="CyBall Logo" class="logo">
+        </div>
     </div>
-    <div class="content-ani">
-        <img src="./images/logo.png" alt="CyBall Logo" class="logo">
-        <br/>
-        <img src="./images/coming-soon2.png" alt="CyBall Logo" class="comming">
+    <div class="register">
+        <div class="des">
+            The CyBlocs Are Coming...
+        </div>
+        <div id="sendgrid-subscription-widget" class="sendgrid-subscription-widget" >
+            <form id="sg-widget" data-token="7d1d451100768deca281df2a7b427683" onsubmit="return false;">
+                <input id="email" type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit" id="sg-submit-btn">Sign up</button>
+            </form>
+            <div class="sg-response" id="sg-response"></div>
+        </div>
+
+        <div class="register-des">
+            Register your email for a chance to win an exclusive Genesis CyBloc
+        </div>
     </div>
     <div class="footer">
         <img src="./images/frame-icon.png" class="frame">
@@ -140,13 +261,13 @@
             <a target="_black" href="http://cyballofficial.medium.com" class="social-item">
                 <img src="./images/medium.png" alt="Cyball medium">
             </a>
-            <a target="_black" href="https://discord.com/channels/869090177505718272/869110135610544139" class="social-item">
+            <a target="_black" href="https://discord.gg/CXrKx679XM" class="social-item">
                 <img src="./images/discord.png" alt="Cyball discord">
             </a>
-            <a target="_black" href="#" class="social-item">
+            <a target="_black" href="http://facebook.com/CyBall-CyBloc-Football-106965301692668" class="social-item">
                 <img src="./images/fb.png" alt="Cyball facebook">
             </a>
-            <a target="_black" href="https://www.instagram.com/CyBall_Official/" class="social-item">
+            <a target="_black" href="http://instagram.com/cyballofficial" class="social-item">
                 <img src="./images/instagram.png" alt="Cyball instagram">
             </a>
         </div>
