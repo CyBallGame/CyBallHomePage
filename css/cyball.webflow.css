@@ -146,9 +146,8 @@ a {
 .content.hero {
   z-index: 4;
   height: 130vh;
-  min-height: 700px;
+  min-height: 710px;
   margin-top: -200px;
-  padding-bottom: 153px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -435,7 +434,7 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 500px;
+  width: 600px;
   background-image: url('../images/Rectangle-47.svg');
   background-position: 0px 0px;
   background-size: auto;
@@ -1711,8 +1710,8 @@ a {
   order: 6;
 }
 
-.image-13 {
-  margin-top: 20px;
+.bsc {
+  margin-top: 22px;
 }
 
 .bg-lights {
@@ -1774,6 +1773,31 @@ a {
 
 .slider-card-mobile {
   display: none;
+}
+
+.div-block-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.image-14 {
+  margin-top: 20px;
+}
+
+.solana {
+  margin-top: 43px;
+  margin-left: 30px;
 }
 
 @media screen and (max-width: 991px) {
@@ -2473,6 +2497,10 @@ a {
     -ms-flex-align: center;
     align-items: center;
   }
+
+  .div-block-14 {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -2883,6 +2911,10 @@ a {
     align-items: center;
   }
 
+  .bsc {
+    width: 100px;
+  }
+
   .bg-lights {
     display: none;
     width: 100vw;
@@ -2924,6 +2956,16 @@ a {
 
   .slider-card-mobile {
     height: 360px;
+  }
+
+  .div-block-14 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .solana {
+    width: 160px;
+    max-width: 50%;
   }
 }
 
