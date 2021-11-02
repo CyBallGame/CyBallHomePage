@@ -2044,11 +2044,13 @@ a {
 
 .tabs-menu {
   margin-top: 15px;
-  margin-left: 8px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .tab-link-classes {
   background-color: transparent;
+  text-align: center;
 }
 
 .tab-link-classes.w--current {
@@ -2063,12 +2065,14 @@ a {
 .tab-link-skills.w--current {
   background-color: transparent;
   font-weight: 700;
+  text-align: center;
 }
 
 .tab-link-trait {
   background-color: transparent;
   opacity: 1;
   font-weight: 400;
+  text-align: center;
 }
 
 .tab-link-trait.w--current {
