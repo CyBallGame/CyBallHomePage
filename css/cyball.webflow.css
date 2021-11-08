@@ -913,6 +913,7 @@ a {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  font-size: 16px;
 }
 
 .parallax-wrap {
@@ -1316,6 +1317,7 @@ a {
   opacity: 0.68;
   font-size: 20px;
   line-height: 30px;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -1464,11 +1466,11 @@ a {
   opacity: 0.18;
 }
 
-.arrow_r {
+.arrow_l {
   display: block;
 }
 
-.arrow_l {
+.arrow_r {
   display: block;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -2287,6 +2289,10 @@ a {
 }
 
 @media screen and (min-width: 1920px) {
+  .navbar {
+    display: block;
+  }
+
   .h2 {
     display: block;
     width: auto;
@@ -2295,9 +2301,49 @@ a {
     object-fit: fill;
   }
 
+  .image-4 {
+    display: inline-block;
+  }
+
+  .text-block {
+    font-size: 24px;
+  }
+
+  .paragraph-card {
+    font-size: 20px;
+  }
+
   .paragraph-desscription {
     max-width: 1000px;
     font-size: 20px;
+  }
+
+  .nav-menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+  }
+
+  .navbar_wrap {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+    font-size: 20px;
+  }
+
+  .registerv02 {
+    width: 400px;
+    height: 100px;
+  }
+
+  .button-text {
+    font-size: 22px;
   }
 
   .hero-title {
@@ -2413,10 +2459,6 @@ a {
     margin-top: 70px;
   }
 
-  .hero-img.bg {
-    max-width: 2000px;
-  }
-
   .left-block {
     width: 40%;
   }
@@ -2463,6 +2505,10 @@ a {
 
   .content.small.second {
     margin-top: -50px;
+  }
+
+  .content.med {
+    margin-top: auto;
   }
 
   .content.nopadding.collect {
@@ -2593,6 +2639,12 @@ a {
   }
 
   .paragraph-card {
+    min-width: 250px;
+    font-size: 16px;
+  }
+
+  .paragraph-desscription {
+    max-width: 650px;
     min-width: 250px;
   }
 
@@ -3077,9 +3129,10 @@ a {
   .card {
     position: relative;
     display: block;
+    overflow: visible;
     width: 400px;
     height: 100%;
-    max-width: none;
+    max-width: 90%;
     min-width: 400px;
     margin-right: auto;
     margin-left: auto;
@@ -3132,13 +3185,12 @@ a {
 
   .text-block {
     top: 100px;
-    margin-top: 31px;
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
     opacity: 0.9;
-    font-size: 28px;
+    font-size: 24px;
     letter-spacing: 1px;
   }
 
@@ -3148,14 +3200,14 @@ a {
     right: 0%;
     bottom: auto;
     min-width: 260px;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+    padding-right: 10px;
+    padding-left: 10px;
     opacity: 0.81;
+    font-size: 18px;
   }
 
   .paragraph-desscription {
+    max-width: 450px;
     margin-top: 76px;
   }
 
@@ -3165,12 +3217,12 @@ a {
     margin-left: 300px;
   }
 
-  .arrow_r {
+  .arrow_l {
     width: 80px;
     max-width: 100%;
   }
 
-  .arrow_l {
+  .arrow_r {
     width: 80px;
     max-width: 70%;
   }
@@ -3390,6 +3442,26 @@ a {
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
+  }
+
+  .tabs-menu {
+    display: block;
+    font-size: 16px;
+  }
+
+  .tab-link-classes {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .tab-link-skills {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .tab-link-trait {
+    padding-right: 25px;
+    padding-left: 25px;
   }
 
   .right-block {
@@ -3718,6 +3790,7 @@ a {
   }
 
   .card-wrap {
+    overflow: visible;
     width: 200px;
     height: 210px;
     margin-top: 22%;
@@ -3749,21 +3822,24 @@ a {
     top: 90px;
     max-width: 60%;
     min-width: 190px;
+    margin-top: -15px;
     padding-right: 20px;
     padding-left: 29px;
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 16px;
     letter-spacing: 1px;
   }
 
   .paragraph-desscription {
+    max-width: 260px;
     margin-top: 30px;
     padding-right: 15px;
     padding-left: 15px;
+    font-size: 14px;
     letter-spacing: 1px;
   }
 
@@ -3780,11 +3856,11 @@ a {
     width: 190px;
   }
 
-  .arrow_r {
+  .arrow_l {
     width: 60px;
   }
 
-  .arrow_l {
+  .arrow_r {
     width: 60px;
   }
 
@@ -3920,11 +3996,6 @@ a {
     align-items: center;
   }
 
-  .html-embed {
-    display: none;
-    margin-top: -93px;
-  }
-
   .slider-card-mobile {
     height: 360px;
   }
@@ -3969,6 +4040,10 @@ a {
   .hero-title {
     top: 136px;
     font-size: 30px;
+  }
+
+  .tab-paragraph {
+    font-size: 14px;
   }
 
   .tabs {
